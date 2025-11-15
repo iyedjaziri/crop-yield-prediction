@@ -1,0 +1,14 @@
+artifact_uri: file:///home/lithium/P12/mlruns/798679972673663490/d9d7b556fcbb42fb814e1475812d2e2b/artifacts
+end_time: 1764115394544
+entry_point_name: ''
+experiment_id: '798679972673663490'
+lifecycle_stage: active
+run_id: d9d7b556fcbb42fb814e1475812d2e2b
+run_name: RandomForest_Challenger
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764115147573
+status: 4
+tags: []
+user_id: lithium

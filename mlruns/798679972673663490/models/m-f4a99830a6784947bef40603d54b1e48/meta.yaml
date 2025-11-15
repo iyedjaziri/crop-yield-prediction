@@ -1,0 +1,10 @@
+artifact_location: file:///home/lithium/P12/mlruns/798679972673663490/models/m-f4a99830a6784947bef40603d54b1e48/artifacts
+creation_timestamp: 1764115456473
+experiment_id: '798679972673663490'
+last_updated_timestamp: 1764115464285
+model_id: m-f4a99830a6784947bef40603d54b1e48
+model_type: null
+name: model
+source_run_id: d9ea44ca5ccb45b0a843fcd8e09faddd
+status: 2
+status_message: null

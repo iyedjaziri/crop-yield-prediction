@@ -1,0 +1,14 @@
+artifact_uri: file:///home/lithium/P12/mlruns/798679972673663490/8987bf15ab6d4c37addc4681f42d9c8e/artifacts
+end_time: 1764429187869
+entry_point_name: ''
+experiment_id: '798679972673663490'
+lifecycle_stage: active
+run_id: 8987bf15ab6d4c37addc4681f42d9c8e
+run_name: Ridge_Baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764429179721
+status: 3
+tags: []
+user_id: lithium

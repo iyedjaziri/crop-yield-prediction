@@ -1,0 +1,22 @@
+artifact_path: file:///home/lithium/P12/mlruns/798679972673663490/models/m-a014f3ded49046b7903ed80e4493a77f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-a014f3ded49046b7903ed80e4493a77f
+model_size_bytes: 4297
+model_uuid: m-a014f3ded49046b7903ed80e4493a77f
+prompts: null
+run_id: 10fed3bbfb1f49afa7923ae324b8c3db
+utc_time_created: '2025-11-26 00:03:48.350156'
