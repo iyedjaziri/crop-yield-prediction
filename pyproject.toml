@@ -2,9 +2,7 @@
 name = "crop-yield-prediction"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "iyedjaziri",email = "iyedjaziri@gmail.com"}
-]
+authors = ["iyedjaziri <iyedjaziri@gmail.com>"]
 readme = "README.md"
 
 
