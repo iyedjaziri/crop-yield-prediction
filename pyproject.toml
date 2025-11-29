@@ -6,6 +6,9 @@ authors = [
     {name = "iyedjaziri",email = "iyedjaziri@gmail.com"}
 ]
 readme = "README.md"
+
+
+[tool.poetry]
 package-mode = false
 requires-python = ">=3.12"
 dependencies = [
