@@ -8,8 +8,11 @@ import os
 app = FastAPI(title="Agritech Answers API")
 
 # Load Model and Data
-MODEL_PATH = "/home/lithium/P12/models/best_model.pkl"
-DATA_PATH = "/home/lithium/P12/data/processed/merged_data.csv"
+# Load Model and Data
+# Determine base path (project root)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "best_model.pkl")
+DATA_PATH = os.path.join(BASE_DIR, "data", "processed", "merged_data.csv")
 
 model = None
 unique_crops = []
@@ -66,10 +69,24 @@ def recommend_crops(input_data: RecommendationInput):
     
     recommendations = []
     
+    # Crop Prices (Market Simulation) - $/ton
+    CROP_PRICES = {
+        "Maize": 500,          # Cereal (High demand)
+        "Rice, paddy": 600,    # Cereal (High value)
+        "Wheat": 450,          # Cereal
+        "Potatoes": 150,       # Tuber (High yield, lower price)
+        "Sweet potatoes": 140, # Tuber
+        "Cassava": 120,        # Root
+        "Yams": 130,           # Root
+        "Sorghum": 400,        # Cereal
+        "Soybeans": 550,       # Legume
+        "Plantains and others": 160 # Fruit/Veg
+    }
+
     # Iterate through all unique crops
     for crop in unique_crops:
         # Create input for this crop
-        crop_input = input_data.dict()
+        crop_input = input_data.model_dump() # Use model_dump for Pydantic v2
         crop_input['Item'] = crop
         input_df = pd.DataFrame([crop_input])
         
@@ -77,8 +94,8 @@ def recommend_crops(input_data: RecommendationInput):
             predicted_yield = model.predict(input_df)[0]
             
             # Calculate Profitability Proxy
-            # Profit = (Yield * 200) - (Pesticides * 10)
-            price = 200
+            # Profit = (Yield * Specific_Price) - (Pesticides * Cost)
+            price = CROP_PRICES.get(crop, 200) # Default 200 if unknown
             cost = 10
             profit = (predicted_yield * price) - (input_data.Pesticides_tonnes * cost)
             

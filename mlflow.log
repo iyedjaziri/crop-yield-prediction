@@ -1,0 +1,1162 @@
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:256: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, artifact_uri)
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:285: FutureWarning: Filesystem model registry backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri)
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     Started parent process [89052]
+INFO:     Started server process [89054]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [89056]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [89055]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [89057]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56424 - "HEAD / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35798 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35798 - "GET /static-files/static/js/main.380f9aea.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /static-files/static/css/main.280d6c90.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35818 - "GET /static-files/favicon.ico HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /static-files/static/js/5759.45405231.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35798 - "GET /static-files/static/js/3617.10568100.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35798 - "GET /static-files/static/css/762.26533251.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /static-files/static/js/762.335831d3.chunk.js HTTP/1.1" 200 OK
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:256: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, artifact_uri)
+INFO:     127.0.0.1:35812 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35798 - "GET /static-files/static/js/2365.08729b99.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /static-files/static/js/8799.de860ae0.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35846 - "GET /static-files/static/js/6016.a73a7053.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35848 - "GET /static-files/static/css/565.fd7db8ca.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35848 - "GET /static-files/static/js/565.222c289f.chunk.js HTTP/1.1" 200 OK
+2025/12/09 07:28:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:41204 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:41204 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:41204 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:41204 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:20 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:41204 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49062 - "GET /static-files/static/css/7679.73d820e1.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49072 - "GET /static-files/static/js/7679.5be5e428.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49070 - "GET /static-files/static/js/2820.e9a9d989.chunk.js HTTP/1.1" 200 OK
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:285: FutureWarning: Filesystem model registry backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri)
+INFO:     127.0.0.1:49070 - "GET /ajax-api/2.0/mlflow/registered-models/search?filter=&max_results=25&order_by=name+ASC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49072 - "GET /static-files/static/js/3912.487900b2.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49070 - "GET /static-files/static/js/4977.bb23021b.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49070 - "GET /ajax-api/2.0/mlflow/registered-models/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49070 - "GET /ajax-api/2.0/mlflow/registered-models/search?filter=&max_results=25&order_by=name+ASC HTTP/1.1" 200 OK
+2025/12/09 07:28:32 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:49070 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:33 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:49070 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:33 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:49070 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:34 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:49070 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:28:38 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:47162 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:35496 - "GET /static-files/static/js/8975.6d6dd5b6.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35512 - "GET /static-files/static/js/1090.9c665bdd.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35514 - "GET /static-files/static/js/194.bffb2d90.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35532 - "GET /static-files/static/js/2334.fa3bbeb7.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35532 - "GET /static-files/static/js/8800.a03d202d.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35514 - "GET /static-files/static/js/3887.80196d3a.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35512 - "GET /static-files/static/js/9635.23ed64fc.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35496 - "GET /static-files/static/js/5167.7a115efb.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35532 - "GET /static-files/static/js/363.a9a32c36.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35496 - "GET /static-files/static/js/76.b1545197.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35518 - "GET /static-files/static/js/8906.83fbad33.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35490 - "GET /static-files/static/js/8813.6db77245.chunk.js HTTP/1.1" 200 OK
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:256: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, artifact_uri)
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:256: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, artifact_uri)
+INFO:     127.0.0.1:35490 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35490 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35514 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35514 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2025/12/09 07:29:52 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35490 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:29:52 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35490 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:29:53 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35490 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:35490 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35514 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35496 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35532 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35532 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35496 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35496 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2025/12/09 07:29:53 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35532 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:29:54 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35532 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:29:55 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:35532 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49736 - "GET /static-files/static/css/9563.3a1ae3b9.chunk.css HTTP/1.1" 200 OK
+2025/12/09 07:29:56 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:49722 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49736 - "GET /static-files/static/js/1538.e01eb384.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49766 - "GET /static-files/static/js/4499.a03329c0.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "GET /static-files/static/js/2354.b6575389.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49750 - "GET /static-files/static/js/683.b5476dee.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49722 - "GET /static-files/static/js/657.85c37963.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "GET /static-files/static/js/8555.3803d908.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49786 - "GET /static-files/static/js/8169.4fbe9ffa.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49750 - "GET /static-files/static/js/9791.9560c16c.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49736 - "GET /static-files/static/js/1241.879a3257.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49722 - "GET /static-files/static/js/4802.4b3988ed.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "GET /static-files/static/js/1573.82c5c603.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49786 - "GET /static-files/static/js/9563.941d9737.chunk.js HTTP/1.1" 200 OK
+/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py:256: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, artifact_uri)
+INFO:     127.0.0.1:49766 - "GET /ajax-api/2.0/mlflow/experiments/get?experiment_id=798679972673663490 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "GET /static-files/static/css/1575.05d081e5.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49750 - "GET /static-files/static/js/5964.4d84f1bd.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49766 - "GET /static-files/static/js/1575.6f955232.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49750 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49782 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49786 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2025/12/09 07:30:06 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:57646 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:30:07 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:57646 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:30:07 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:57646 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:30:08 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:57646 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:30:13 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:57646 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:33948 - "POST /api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33952 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:33952 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49958 - "GET /ajax-api/2.0/mlflow/registered-models/search?filter=&max_results=25&order_by=name+ASC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49962 - "GET /static-files/static/css/4783.26533251.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49962 - "GET /static-files/static/js/4783.f5694ee4.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49962 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2025/12/09 07:31:15 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:52050 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:52050 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:52050 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:16 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:52050 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:18 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:52050 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:52056 - "GET /api/2.0/mlflow/experiments/list HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38510 - "GET /ajax-api/2.0/mlflow/experiments/get?experiment_id=798679972673663490 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38502 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38510 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38510 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38502 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33006 - "GET /static-files/static/css/6733.f482616c.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "GET /static-files/static/js/1876.132109ab.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33022 - "GET /static-files/static/js/5776.36e18643.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33030 - "GET /static-files/static/js/6733.fa0f7442.chunk.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33030 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33022 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=3c6419aed6b74f25a0a61c7c3e9bf595 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33030 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=10fed3bbfb1f49afa7923ae324b8c3db HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33006 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=881c26db3a9a4966ae405e25b915899e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=644f2ec18fe849fab70274a639d8f925 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33022 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=8987bf15ab6d4c37addc4681f42d9c8e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33006 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=d9ea44ca5ccb45b0a843fcd8e09faddd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33030 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=a072a0e02a8e4bcb8e0d774a0630e328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=de97acd4094d45a4a044c4f30113661b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33022 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=f541e4b8dcc449658c9e8f39e192b26f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33022 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2025/12/09 07:31:40 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:33022 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:40 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:33020 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:33020 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:33020 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33020 - "GET /static-files/favicon.ico HTTP/1.1" 200 OK
+2025/12/09 07:31:45 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:33020 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:45 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45894 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:46 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45894 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:46 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45894 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:47 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45894 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:45894 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "POST /ajax-api/3.0/mlflow/traces/search HTTP/1.1" 200 OK
+2025/12/09 07:31:49 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45894 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:50 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45906 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:50 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45906 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+2025/12/09 07:31:51 ERROR mlflow.server: Exception on /graphql [POST]
+Traceback (most recent call last):
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 727, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/handlers.py", line 2775, in _graphql
+    from mlflow.server.graphql.graphql_no_batching import check_query_safety
+  File "/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/mlflow/server/graphql/graphql_no_batching.py", line 5, in <module>
+    from graphql.language.ast import DocumentNode, FieldNode
+ImportError: cannot import name 'DocumentNode' from 'graphql.language.ast' (/home/lithium/.cache/pypoetry/virtualenvs/crop-yield-prediction-84koIw19-py3.12/lib/python3.12/site-packages/graphql/language/ast.py)
+INFO:     127.0.0.1:45906 - "POST /graphql HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:45894 - "GET /ajax-api/2.0/mlflow/experiments/get?experiment_id=798679972673663490 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=10fed3bbfb1f49afa7923ae324b8c3db HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45912 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=644f2ec18fe849fab70274a639d8f925 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=881c26db3a9a4966ae405e25b915899e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=3c6419aed6b74f25a0a61c7c3e9bf595 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=8987bf15ab6d4c37addc4681f42d9c8e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45912 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=a072a0e02a8e4bcb8e0d774a0630e328 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=de97acd4094d45a4a044c4f30113661b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=d9ea44ca5ccb45b0a843fcd8e09faddd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /ajax-api/2.0/mlflow/runs/get?run_id=f541e4b8dcc449658c9e8f39e192b26f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54824 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54824 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54848 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54834 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50526 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32828 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32830 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54494 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36974 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40084 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60110 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54358 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51030 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48552 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59486 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60798 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60782 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60788 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35776 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35780 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54892 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK

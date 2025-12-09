@@ -60,10 +60,23 @@ with tab2:
                 result = response.json()
                 top_crops = result['top_crops']
                 
+                # Prepare data for visualization
+                df_results = pd.DataFrame(top_crops)
+                
+                # Display DataFrame
+                st.subheader("Top Recommended Crops Table")
+                st.dataframe(df_results[['crop', 'predicted_yield', 'profitability']])
+                
+                # Display Bar Chart
+                st.subheader("Yield Comparison (hg/ha)")
+                st.bar_chart(data=df_results, x='crop', y='predicted_yield', color='#4CAF50')
+
+                # Display Profitability Chart
+                st.subheader("Profitability Comparison ($)")
+                st.bar_chart(data=df_results, x='crop', y='profitability', color='#FF9800')
+
                 for i, rec in enumerate(top_crops, 1):
-                    st.subheader(f"{i}. {rec['crop']}")
-                    st.write(f"Predicted Yield: {rec['predicted_yield']:.2f} hg/ha")
-                    st.write(f"Estimated Profitability: ${rec['profitability']:.2f}")
+                    st.write(f"**{i}. {rec['crop']}** | Yield: {rec['predicted_yield']:.1f} | Profit: ${rec['profitability']:.2f}")
                     st.markdown("---")
             else:
                 st.error(f"Error: {response.text}")

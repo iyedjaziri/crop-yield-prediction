@@ -1,0 +1,38 @@
+[
+  {
+    "description": "Scenario 1: Tropical Climate (India) -> Expect Cassava/Tubers",
+    "input": {
+      "Area": "India",
+      "avg_rainfall_mm": 2000,
+      "avg_temp_c": 30,
+      "Pesticides_tonnes": 50
+    }
+  },
+  {
+    "description": "Scenario 2: Moderate Climate (France) -> Expect Rice (High Value)",
+    "input": {
+      "Area": "France",
+      "avg_rainfall_mm": 800,
+      "avg_temp_c": 15,
+      "Pesticides_tonnes": 50
+    }
+  },
+  {
+    "description": "Scenario 3: Cold & Wet (Germany) -> Expect Corn/Maize",
+    "input": {
+      "Area": "Germany",
+      "avg_rainfall_mm": 1000,
+      "avg_temp_c": 10,
+      "Pesticides_tonnes": 50
+    }
+  },
+  {
+    "description": "Scenario 4: High Pesticide Usage (Brazil) -> Expect Rice",
+    "input": {
+      "Area": "Brazil",
+      "avg_rainfall_mm": 1500,
+      "avg_temp_c": 25,
+      "Pesticides_tonnes": 500
+    }
+  }
+]

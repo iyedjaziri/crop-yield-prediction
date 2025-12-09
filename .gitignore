@@ -1,0 +1,15 @@
+# General
+__pycache__/
+*.py[cod]
+.venv/
+.env
+mlruns/
+api.log
+streamlit.log
+
+# Delivery Folder (ignored as per request)
+Concevez_*/
+
+# Markdown files (ignored as per request, except README)
+*.md
+!README.md

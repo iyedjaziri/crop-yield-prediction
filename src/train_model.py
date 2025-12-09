@@ -118,7 +118,18 @@ def train_model():
         mlflow.log_metric("mae", mae)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("profitability_error", profit_error)
-        mlflow.sklearn.log_model(best_rf, "model")
+
+        # Signature & Input Example
+        from mlflow.models import infer_signature
+        input_example = X_test.iloc[:5]
+        signature = infer_signature(input_example, y_pred_rf[:5])
+        
+        mlflow.sklearn.log_model(
+            best_rf, 
+            "model",
+            signature=signature,
+            input_example=input_example
+        )
         
         print(f"RandomForest - RMSE: {rmse}, R2: {r2}")
         
